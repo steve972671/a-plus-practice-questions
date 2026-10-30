@@ -11,7 +11,6 @@ They were written as original practice items (Core 1 / Core 2 style) for studyin
 
 ## Contents
 - `core1-full-90-a.json` / `core2-full-90-a.json` - ~90-question practice sets (stems + choices only)
-- shorter `*-practice-test-a.json` packs
 
 Answer keys and integrity hashes live in a **separate private** repository (`a-plus-practice-answers`).
 
