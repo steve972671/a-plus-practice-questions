@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A+ Practice Quiz Runner</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:760px;margin:2em auto;padding:0 1em;line-height:1.45}
+.note{background:#fff7d6;border:1px solid #e6d27a;padding:.6em .9em;border-radius:6px;font-size:.92em}
+button{font-size:1em;padding:.5em .9em;margin:.25em .25em .25em 0;cursor:pointer;border-radius:6px;border:1px solid #888;background:#f4f4f4}
+.choice{display:block;width:100%;text-align:left}
+.choice.sel{background:#cfe3ff;border-color:#2a6edb}
+.ok{color:#14792b}.bad{color:#b3261e}.hidden{display:none}
+.bar{height:8px;background:#eee;border-radius:4px}.bar div{height:8px;background:#2a6edb;border-radius:4px}
+</style></head><body>
+<h1>CompTIA A+ Practice Quiz</h1>
+<p class="note">Original homemade practice quizzes for study. <b>Not</b> CompTIA exam dumps or pirated/leaked exam questions. Answer keys are kept in a separate private repo; load one locally to score.</p>
+
+<div id="setup">
+<p>Pick a quiz (works when served with <code>python -m http.server</code>):
+<select id="known"><option value="">-- choose --</option>
+<option>core1-full-90-a.json</option><option>core2-full-90-a.json</option>
+<option>core1-practice-test-a.json</option><option>core2-practice-test-a.json</option></select>
+<button id="loadKnown">Load</button></p>
+<p>Or open a quiz JSON file: <input type="file" id="quizFile" accept=".json"></p>
+<p id="err" class="bad"></p>
+</div>
+
+<div id="quiz" class="hidden">
+<h2 id="title"></h2>
+<div class="bar"><div id="prog"></div></div>
+<p><span id="count"></span> &middot; <i id="domain"></i></p>
+<p id="stem"></p><div id="choices"></div>
+<p><button id="prev">&larr; Prev</button><button id="next">Next &rarr;</button><button id="finish">Finish</button></p>
+</div>
+
+<div id="result" class="hidden">
+<h2>Finished</h2><p id="summary"></p>
+<p>Load answer key (from your private answers repo) to score: <input type="file" id="keyFile" accept=".json"></p>
+<div id="score"></div>
+<p><button onclick="location.reload()">Start over</button></p>
+</div>
+
+<script>
+let quiz=null,i=0,picks={};
+const $=id=>document.getElementById(id);
+function start(data){
+  if(!data||!Array.isArray(data.questions)){$('err').textContent='Not a quiz file (no questions array).';return;}
+  quiz=data;i=0;picks={};$('setup').classList.add('hidden');$('quiz').classList.remove('hidden');
+  $('title').textContent=data.title||'Practice quiz';show();
+}
+function show(){
+  const q=quiz.questions[i],n=quiz.questions.length;
+  $('count').textContent=`Question ${i+1} of ${n} (${Object.keys(picks).length} answered)`;
+  $('prog').style.width=(100*(i+1)/n)+'%';$('domain').textContent=q.domain||'';$('stem').textContent=q.stem;
+  const c=$('choices');c.innerHTML='';
+  Object.keys(q.choices).sort().forEach(L=>{
+    const b=document.createElement('button');b.className='choice'+(picks[q.id]===L?' sel':'');
+    b.textContent=L+'. '+q.choices[L];b.onclick=()=>{picks[q.id]=L;if(i<n-1){i++;}show();};c.appendChild(b);
+  });
+}
+$('prev').onclick=()=>{if(i>0){i--;show();}};
+$('next').onclick=()=>{if(i<quiz.questions.length-1){i++;show();}};
+$('finish').onclick=()=>{$('quiz').classList.add('hidden');$('result').classList.remove('hidden');
+  $('summary').textContent=`You answered ${Object.keys(picks).length} of ${quiz.questions.length}. Correctness stays hidden until you load a key.`;};
+$('loadKnown').onclick=()=>{const f=$('known').value;if(!f)return;
+  fetch(f).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(start)
+  .catch(e=>$('err').textContent='Could not fetch '+f+' ('+e.message+'). Serve this folder with "python -m http.server" or use the file picker.');};
+function readFile(input,cb){const f=input.files[0];if(!f)return;const r=new FileReader();
+  r.onload=()=>{try{cb(JSON.parse(r.result));}catch(e){alert('Invalid JSON: '+e.message);}};r.readAsText(f);}
+$('quizFile').onchange=e=>readFile(e.target,start);
+$('keyFile').onchange=e=>readFile(e.target,grade);
+function grade(data){
+  let ans=data.answers||data,key={};
+  if(Array.isArray(ans))ans.forEach(a=>key[a.id]=a);else for(const k in ans)key[k]=typeof ans[k]==='object'?ans[k]:{answer:ans[k]};
+  let right=0,total=0,dom={},rows='';
+  quiz.questions.forEach(q=>{const k=key[q.id];if(!k)return;total++;const d=dom[q.domain]=dom[q.domain]||[0,0];d[1]++;
+    const mine=picks[q.id]||'-';if(mine===k.answer){right++;d[0]++;}
+    else rows+=`<li><b>#${q.id}</b> ${esc(q.stem)}<br>You: <span class="bad">${mine}</span> &middot; Correct: <span class="ok">${k.answer}. ${esc(q.choices[k.answer]||'')}</span>${k.explain?'<br><i>'+esc(k.explain)+'</i>':''}</li>`;});
+  if(!total){$('score').innerHTML='<p class="bad">That key does not match this quiz.</p>';return;}
+  let h=`<h3>Score: ${right}/${total} (${Math.round(100*right/total)}%)</h3><ul>`;
+  for(const d of Object.keys(dom).sort())h+=`<li>${esc(d)}: ${dom[d][0]}/${dom[d][1]}</li>`;
+  $('score').innerHTML=h+'</ul>'+(rows?'<h3>Missed</h3><ol>'+rows+'</ol>':'<p class="ok">Perfect.</p>');
+}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+</script></body></html>
