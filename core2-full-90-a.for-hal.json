@@ -1,0 +1,998 @@
+{
+  "title": "A+ Core 2 Practice Exam A (Original)",
+  "exam_focus": "Core 2 topics: OS, security, software troubleshooting, operational procedures",
+  "notes": "Answer-free copy for test taker. Homemade original; not official CompTIA items.",
+  "question_count": 90,
+  "questions": [
+    {
+      "id": 1,
+      "domain": "Operating Systems",
+      "stem": "A Linux script needs execute permission for its owner. Which command changes file permissions?",
+      "choices": {
+        "A": "chmod",
+        "B": "pwd",
+        "C": "chown",
+        "D": "grep"
+      }
+    },
+    {
+      "id": 2,
+      "domain": "Operating Systems",
+      "stem": "Which Linux command runs a single command with elevated (root) privileges?",
+      "choices": {
+        "A": "sudo",
+        "B": "top",
+        "C": "man",
+        "D": "su -l guest"
+      }
+    },
+    {
+      "id": 3,
+      "domain": "Security",
+      "stem": "A user copies a file to a different folder on the SAME NTFS volume. What usually happens to the file's NTFS permissions?",
+      "choices": {
+        "A": "It keeps its original permissions",
+        "B": "It loses all permissions and becomes inaccessible",
+        "C": "It gains Full Control for Everyone",
+        "D": "It inherits the permissions of the destination folder"
+      }
+    },
+    {
+      "id": 4,
+      "domain": "Software Troubleshooting",
+      "stem": "Print jobs are stuck in the queue and nothing prints from any app. What should the technician try first?",
+      "choices": {
+        "A": "Replace the printer",
+        "B": "Reinstall the operating system",
+        "C": "Restart the Print Spooler service and clear the queue",
+        "D": "Replace the network cable on the server"
+      }
+    },
+    {
+      "id": 5,
+      "domain": "Operational Procedures",
+      "stem": "While on a support call, a technician's personal phone keeps ringing. What is the most professional action?",
+      "choices": {
+        "A": "Put the customer on hold to check social media",
+        "B": "Answer it quickly while the customer waits",
+        "C": "Text back during the conversation",
+        "D": "Silence the phone and stay focused on the customer"
+      }
+    },
+    {
+      "id": 6,
+      "domain": "Software Troubleshooting",
+      "stem": "A website shows a certificate warning in all browsers on one PC only, while other PCs load it fine. What should be checked first?",
+      "choices": {
+        "A": "The website's DNS server",
+        "B": "The PC's date and time settings",
+        "C": "The printer driver",
+        "D": "The monitor resolution"
+      }
+    },
+    {
+      "id": 7,
+      "domain": "Operational Procedures",
+      "stem": "A ticket is resolved. Which ticket entry best helps the next technician who sees a similar issue?",
+      "choices": {
+        "A": "A clear description of the problem, steps taken, root cause, and resolution",
+        "B": "The word Fixed and the close date",
+        "C": "A note to call the original technician",
+        "D": "Only the user's name and phone number"
+      }
+    },
+    {
+      "id": 8,
+      "domain": "Operational Procedures",
+      "stem": "Which document defines what employees may and may not do with company computers and networks?",
+      "choices": {
+        "A": "Acceptable use policy (AUP)",
+        "B": "Asset tag",
+        "C": "Network topology diagram",
+        "D": "Safety data sheet (SDS)"
+      }
+    },
+    {
+      "id": 9,
+      "domain": "Operating Systems",
+      "stem": "Which Windows edition feature is required to join a corporate Active Directory domain?",
+      "choices": {
+        "A": "Only Windows Server editions can join a domain",
+        "B": "Windows Home edition",
+        "C": "Any edition with S mode enabled",
+        "D": "Windows Pro (or higher) edition"
+      }
+    },
+    {
+      "id": 10,
+      "domain": "Software Troubleshooting",
+      "stem": "A mobile app keeps crashing after a recent app update. What is a reasonable first step?",
+      "choices": {
+        "A": "Swap the SIM card",
+        "B": "Factory reset the phone immediately",
+        "C": "Clear the app's cache or reinstall the app",
+        "D": "Replace the battery"
+      }
+    },
+    {
+      "id": 11,
+      "domain": "Software Troubleshooting",
+      "stem": "A PC crashes after a new driver installation and cannot stay running in normal mode. Which option lets the technician boot with minimal drivers to remove it?",
+      "choices": {
+        "A": "Fast Startup",
+        "B": "Safe Mode",
+        "C": "Airplane mode",
+        "D": "Hibernate"
+      }
+    },
+    {
+      "id": 12,
+      "domain": "Security",
+      "stem": "A company wants employees to receive only the access needed to perform their jobs. What principle is this?",
+      "choices": {
+        "A": "Defense in depth",
+        "B": "Implicit deny for guests only",
+        "C": "Principle of least privilege",
+        "D": "Single sign-on"
+      }
+    },
+    {
+      "id": 13,
+      "domain": "Operating Systems",
+      "stem": "A technician needs a file system on a USB drive that works on both Windows and macOS and supports files larger than 4 GB. Which is the best choice?",
+      "choices": {
+        "A": "FAT32",
+        "B": "ext4",
+        "C": "NTFS with EFS",
+        "D": "exFAT"
+      }
+    },
+    {
+      "id": 14,
+      "domain": "Operating Systems",
+      "stem": "Which tool can be used to choose a selective startup and set Safe boot options for the next restart in Windows?",
+      "choices": {
+        "A": "Resource Monitor",
+        "B": "System Configuration (msconfig)",
+        "C": "Disk Cleanup",
+        "D": "Windows Memory Diagnostic"
+      }
+    },
+    {
+      "id": 15,
+      "domain": "Security",
+      "stem": "Which malware type is specifically designed to hide deep in the OS and conceal its presence from normal tools?",
+      "choices": {
+        "A": "Phishing email",
+        "B": "Adware",
+        "C": "Rootkit",
+        "D": "Spyware toolbar"
+      }
+    },
+    {
+      "id": 16,
+      "domain": "Operational Procedures",
+      "stem": "In the CompTIA troubleshooting methodology, what is the FIRST step?",
+      "choices": {
+        "A": "Document findings, actions, and outcomes",
+        "B": "Establish a theory of probable cause",
+        "C": "Implement the solution",
+        "D": "Identify the problem"
+      }
+    },
+    {
+      "id": 17,
+      "domain": "Operating Systems",
+      "stem": "Which file extension is typically used for a Linux Bash shell script?",
+      "choices": {
+        "A": ".bat",
+        "B": ".msi",
+        "C": ".ps1",
+        "D": ".sh"
+      }
+    },
+    {
+      "id": 18,
+      "domain": "Operating Systems",
+      "stem": "Which Windows command-line tool scans and repairs protected system files?",
+      "choices": {
+        "A": "gpupdate /force",
+        "B": "sfc /scannow",
+        "C": "chkdsk /f only for network shares",
+        "D": "ipconfig /all"
+      }
+    },
+    {
+      "id": 19,
+      "domain": "Software Troubleshooting",
+      "stem": "A user's browser keeps redirecting searches to an unfamiliar site and shows new toolbars. What is the most likely cause?",
+      "choices": {
+        "A": "Browser hijacker or malicious extension",
+        "B": "Failing hard drive",
+        "C": "Bad monitor cable",
+        "D": "Expired Wi-Fi password"
+      }
+    },
+    {
+      "id": 20,
+      "domain": "Operating Systems",
+      "stem": "Which Windows command forces an immediate refresh of Group Policy settings?",
+      "choices": {
+        "A": "netstat -a",
+        "B": "tracert",
+        "C": "gpupdate /force",
+        "D": "gpresult /r"
+      }
+    },
+    {
+      "id": 21,
+      "domain": "Security",
+      "stem": "WPA2-Personal typically uses which encryption method?",
+      "choices": {
+        "A": "AES (CCMP)",
+        "B": "RC4 with WEP",
+        "C": "DES",
+        "D": "No encryption, only a password prompt"
+      }
+    },
+    {
+      "id": 22,
+      "domain": "Operating Systems",
+      "stem": "Which file extension is used for a Windows PowerShell script?",
+      "choices": {
+        "A": ".vbs",
+        "B": ".py",
+        "C": ".ps1",
+        "D": ".sh"
+      }
+    },
+    {
+      "id": 23,
+      "domain": "Operating Systems",
+      "stem": "Which Linux command shows running processes and live CPU and memory usage?",
+      "choices": {
+        "A": "nano",
+        "B": "pwd",
+        "C": "chmod",
+        "D": "top"
+      }
+    },
+    {
+      "id": 24,
+      "domain": "Software Troubleshooting",
+      "stem": "A user cannot open a file and gets an Access denied message on an NTFS folder. Other users can open it. What is the most likely cause?",
+      "choices": {
+        "A": "The user lacks the required NTFS permissions",
+        "B": "The monitor is failing",
+        "C": "The CPU is overheating",
+        "D": "The printer is offline"
+      }
+    },
+    {
+      "id": 25,
+      "domain": "Operating Systems",
+      "stem": "Which Windows feature returns system files, drivers, and settings to an earlier state without deleting personal documents?",
+      "choices": {
+        "A": "Format C:",
+        "B": "Disk Cleanup",
+        "C": "Reset this PC with Remove everything",
+        "D": "System Restore"
+      }
+    },
+    {
+      "id": 26,
+      "domain": "Security",
+      "stem": "Which wireless security protocol is the most secure choice for a new home router that supports it?",
+      "choices": {
+        "A": "Open network with MAC filtering",
+        "B": "WPA with TKIP",
+        "C": "WEP",
+        "D": "WPA3"
+      }
+    },
+    {
+      "id": 27,
+      "domain": "Security",
+      "stem": "Which feature encrypts individual files and folders on NTFS, tied to the user's account?",
+      "choices": {
+        "A": "Encrypting File System (EFS)",
+        "B": "BitLocker To Go",
+        "C": "Storage Spaces",
+        "D": "Disk Cleanup"
+      }
+    },
+    {
+      "id": 28,
+      "domain": "Security",
+      "stem": "A targeted phishing email is crafted specifically for the company's CEO. What is this called?",
+      "choices": {
+        "A": "Whaling",
+        "B": "Smishing",
+        "C": "Tailgating",
+        "D": "Piggybacking"
+      }
+    },
+    {
+      "id": 29,
+      "domain": "Operating Systems",
+      "stem": "Which Windows tool shows logs such as Application, Security, and System to help find the cause of an error?",
+      "choices": {
+        "A": "Task Scheduler",
+        "B": "Device Manager",
+        "C": "Disk Management",
+        "D": "Event Viewer"
+      }
+    },
+    {
+      "id": 30,
+      "domain": "Operational Procedures",
+      "stem": "Before opening a desktop PC case, which action best protects the components from electrostatic discharge?",
+      "choices": {
+        "A": "Wear an antistatic wrist strap connected to a proper ground",
+        "B": "Touch the components with a plastic tool first",
+        "C": "Work on a carpeted floor in socks",
+        "D": "Keep the PC plugged in and powered on"
+      }
+    },
+    {
+      "id": 31,
+      "domain": "Software Troubleshooting",
+      "stem": "A user's antivirus shows it has not received definition updates in weeks. What should be done first?",
+      "choices": {
+        "A": "Manually update definitions and verify the update service is running",
+        "B": "Ignore it if the PC seems fine",
+        "C": "Disable the firewall",
+        "D": "Uninstall the antivirus permanently"
+      }
+    },
+    {
+      "id": 32,
+      "domain": "Security",
+      "stem": "A user receives an email claiming to be from the bank with a link to confirm account details on a lookalike website. What type of attack is this?",
+      "choices": {
+        "A": "Tailgating",
+        "B": "Brute force",
+        "C": "Phishing",
+        "D": "Dumpster diving"
+      }
+    },
+    {
+      "id": 33,
+      "domain": "Operating Systems",
+      "stem": "Which file system is most commonly used for a modern Windows system drive?",
+      "choices": {
+        "A": "NTFS",
+        "B": "HFS+",
+        "C": "ext4",
+        "D": "FAT16"
+      }
+    },
+    {
+      "id": 34,
+      "domain": "Operating Systems",
+      "stem": "In Windows 10/11, where can you quickly disable an app from launching at sign-in?",
+      "choices": {
+        "A": "Task Manager > Startup apps",
+        "B": "Device Manager > Disk drives",
+        "C": "Control Panel > Fonts",
+        "D": "Disk Management"
+      }
+    },
+    {
+      "id": 35,
+      "domain": "Operating Systems",
+      "stem": "On macOS, which feature provides automatic incremental backups to an external drive?",
+      "choices": {
+        "A": "Mission Control",
+        "B": "Spotlight",
+        "C": "Keychain Access",
+        "D": "Time Machine"
+      }
+    },
+    {
+      "id": 36,
+      "domain": "Operating Systems",
+      "stem": "Which Windows tool lets a technician end a frozen application and see per-process CPU and memory usage?",
+      "choices": {
+        "A": "Event Viewer",
+        "B": "Disk Management",
+        "C": "Registry Editor",
+        "D": "Task Manager"
+      }
+    },
+    {
+      "id": 37,
+      "domain": "Software Troubleshooting",
+      "stem": "After a video driver update, the screen goes black at sign-in. Which Device Manager action is the best fix once the technician gets into Safe Mode?",
+      "choices": {
+        "A": "Uninstall the keyboard driver",
+        "B": "Scan for hardware changes only",
+        "C": "Roll Back Driver",
+        "D": "Disable the network adapter"
+      }
+    },
+    {
+      "id": 38,
+      "domain": "Operational Procedures",
+      "stem": "Which backup type copies only files changed since the last backup of ANY type, and resets the archive bit?",
+      "choices": {
+        "A": "Differential",
+        "B": "Incremental",
+        "C": "Full",
+        "D": "Synthetic full"
+      }
+    },
+    {
+      "id": 39,
+      "domain": "Operational Procedures",
+      "stem": "A server room needs protection from short power outages and voltage sags. Which device is the best fit?",
+      "choices": {
+        "A": "Cable tester",
+        "B": "Basic power strip",
+        "C": "Surge suppressor only",
+        "D": "Uninterruptible power supply (UPS)"
+      }
+    },
+    {
+      "id": 40,
+      "domain": "Operating Systems",
+      "stem": "A Windows PC will not boot after a failed driver install. Which Windows Recovery Environment option automatically attempts to fix boot problems?",
+      "choices": {
+        "A": "Windows Update",
+        "B": "Startup Repair",
+        "C": "Disk Cleanup",
+        "D": "Defragment and Optimize Drives"
+      }
+    },
+    {
+      "id": 41,
+      "domain": "Operational Procedures",
+      "stem": "A technician has just identified the problem by questioning the user and reviewing recent changes. What should the technician do next?",
+      "choices": {
+        "A": "Establish a theory of probable cause",
+        "B": "Verify full system functionality",
+        "C": "Document findings, actions, and outcomes",
+        "D": "Establish a plan of action to resolve the problem"
+      }
+    },
+    {
+      "id": 42,
+      "domain": "Operational Procedures",
+      "stem": "A small office wants a backup strategy that follows the 3-2-1 rule. Which plan meets it?",
+      "choices": {
+        "A": "Three full backups kept on the same external drive",
+        "B": "One copy on the server, two copies on the same NAS",
+        "C": "Three backups per day, two technicians, one server",
+        "D": "Three copies of the data, on two different media types, with one copy offsite"
+      }
+    },
+    {
+      "id": 43,
+      "domain": "Operating Systems",
+      "stem": "Which Linux command shows the current working directory?",
+      "choices": {
+        "A": "pwd",
+        "B": "chmod",
+        "C": "ls",
+        "D": "cd ~"
+      }
+    },
+    {
+      "id": 44,
+      "domain": "Operating Systems",
+      "stem": "Which Linux command searches for text matching a pattern inside files?",
+      "choices": {
+        "A": "cp",
+        "B": "mv",
+        "C": "df",
+        "D": "grep"
+      }
+    },
+    {
+      "id": 45,
+      "domain": "Operational Procedures",
+      "stem": "Which step comes immediately after implementing the solution in the CompTIA troubleshooting process?",
+      "choices": {
+        "A": "Test the theory to determine the cause",
+        "B": "Identify the problem",
+        "C": "Verify full system functionality and implement preventive measures if applicable",
+        "D": "Establish a theory of probable cause"
+      }
+    },
+    {
+      "id": 46,
+      "domain": "Software Troubleshooting",
+      "stem": "An application worked yesterday but crashes on launch after last night's update. What is the best first recovery step?",
+      "choices": {
+        "A": "Uninstall the recent update or repair the application",
+        "B": "Replace the system drive",
+        "C": "Disable Windows Update permanently",
+        "D": "Reformat and reinstall Windows"
+      }
+    },
+    {
+      "id": 47,
+      "domain": "Operating Systems",
+      "stem": "A technician needs to create, extend, and format partitions on a new drive using a GUI in Windows. Which tool should be used?",
+      "choices": {
+        "A": "System Information",
+        "B": "Disk Management (diskmgmt.msc)",
+        "C": "Event Viewer",
+        "D": "Performance Monitor"
+      }
+    },
+    {
+      "id": 48,
+      "domain": "Software Troubleshooting",
+      "stem": "A user reports that a program says a required DLL file is missing. What is the best first fix?",
+      "choices": {
+        "A": "Change the screen resolution",
+        "B": "Repair or reinstall the application",
+        "C": "Update the BIOS",
+        "D": "Replace the hard drive"
+      }
+    },
+    {
+      "id": 49,
+      "domain": "Operating Systems",
+      "stem": "Which Windows command displays the IP configuration, including DNS servers and MAC address?",
+      "choices": {
+        "A": "nslookup only",
+        "B": "ping -t",
+        "C": "ipconfig /all",
+        "D": "tracert"
+      }
+    },
+    {
+      "id": 50,
+      "domain": "Security",
+      "stem": "A shared folder grants Everyone the share permission Read. The NTFS permission for a user is Modify. What is the user's effective access over the network?",
+      "choices": {
+        "A": "Modify",
+        "B": "Read",
+        "C": "No access",
+        "D": "Full Control"
+      }
+    },
+    {
+      "id": 51,
+      "domain": "Operational Procedures",
+      "stem": "A technician must lift a heavy UPS battery unit. What is the safest technique?",
+      "choices": {
+        "A": "Lift with the back and arms extended",
+        "B": "Twist the torso while lifting to save time",
+        "C": "Lift with the legs, keep the back straight, and get help if the item is too heavy",
+        "D": "Bend at the waist and lift quickly"
+      }
+    },
+    {
+      "id": 52,
+      "domain": "Operating Systems",
+      "stem": "Which Windows utility removes temporary files and other unneeded data to free disk space?",
+      "choices": {
+        "A": "Device Manager",
+        "B": "Local Security Policy",
+        "C": "Event Viewer",
+        "D": "Disk Cleanup"
+      }
+    },
+    {
+      "id": 53,
+      "domain": "Software Troubleshooting",
+      "stem": "A user reports frequent pop-ups even with the browser closed. What is the most likely cause?",
+      "choices": {
+        "A": "Incorrect keyboard layout",
+        "B": "Low toner",
+        "C": "Adware or other malware",
+        "D": "Overheating PSU"
+      }
+    },
+    {
+      "id": 54,
+      "domain": "Security",
+      "stem": "Before donating old hard drives, a company must ensure data cannot be recovered but wants the drives reusable. What is the best method?",
+      "choices": {
+        "A": "Use a secure overwrite/drive wipe tool",
+        "B": "Do a quick format",
+        "C": "Drill holes through the platters",
+        "D": "Delete the files and empty the Recycle Bin"
+      }
+    },
+    {
+      "id": 55,
+      "domain": "Software Troubleshooting",
+      "stem": "A Windows 11 PC boots very slowly. Many apps load at sign-in. What is the best first step?",
+      "choices": {
+        "A": "Turn off the Windows firewall",
+        "B": "Delete the user profile",
+        "C": "Replace the motherboard",
+        "D": "Disable unneeded startup apps"
+      }
+    },
+    {
+      "id": 56,
+      "domain": "Operational Procedures",
+      "stem": "An administrator wants to upgrade the firewall firmware on a production network. Under change management, what should happen first?",
+      "choices": {
+        "A": "Ask one user if the time is convenient",
+        "B": "Install the firmware immediately during business hours",
+        "C": "Submit a change request with scope, risk, and a rollback plan for approval",
+        "D": "Upgrade first and document it later if problems occur"
+      }
+    },
+    {
+      "id": 57,
+      "domain": "Security",
+      "stem": "An enterprise wants each Wi-Fi user to authenticate with their own domain credentials through a RADIUS server. Which mode should be used?",
+      "choices": {
+        "A": "WPS push-button setup",
+        "B": "WEP with a 128-bit key",
+        "C": "WPA2-Personal with a shared passphrase",
+        "D": "WPA2/WPA3-Enterprise (802.1X)"
+      }
+    },
+    {
+      "id": 58,
+      "domain": "Security",
+      "stem": "Which is the LAST step in the CompTIA malware removal process?",
+      "choices": {
+        "A": "Quarantine the infected system",
+        "B": "Disable System Restore",
+        "C": "Educate the end user",
+        "D": "Remediate the infected system"
+      }
+    },
+    {
+      "id": 59,
+      "domain": "Operational Procedures",
+      "stem": "A technician tests a theory and it is NOT confirmed. What should the technician do?",
+      "choices": {
+        "A": "Implement the original solution anyway",
+        "B": "Establish a new theory or escalate",
+        "C": "Verify full system functionality",
+        "D": "Close the ticket as unresolved"
+      }
+    },
+    {
+      "id": 60,
+      "domain": "Security",
+      "stem": "Which Windows share permission lets users read, create, modify, and delete files but NOT change permissions?",
+      "choices": {
+        "A": "Read",
+        "B": "Change",
+        "C": "List Folder Contents",
+        "D": "Full Control"
+      }
+    },
+    {
+      "id": 61,
+      "domain": "Operating Systems",
+      "stem": "Which Windows tool is used to roll back, update, or disable a device driver?",
+      "choices": {
+        "A": "Device Manager",
+        "B": "Windows Memory Diagnostic",
+        "C": "Disk Cleanup",
+        "D": "Event Viewer"
+      }
+    },
+    {
+      "id": 62,
+      "domain": "Security",
+      "stem": "A user's PC shows malware symptoms. According to the CompTIA malware removal process, what is the FIRST step?",
+      "choices": {
+        "A": "Enable System Restore and create a restore point",
+        "B": "Investigate and verify the malware symptoms",
+        "C": "Schedule scans and run updates",
+        "D": "Educate the end user"
+      }
+    },
+    {
+      "id": 63,
+      "domain": "Security",
+      "stem": "A company wants full-disk encryption on Windows laptops that uses the TPM to protect the key. Which feature should be used?",
+      "choices": {
+        "A": "NTFS compression",
+        "B": "BitLocker",
+        "C": "Windows Hello facial recognition only",
+        "D": "EFS on a single file only"
+      }
+    },
+    {
+      "id": 64,
+      "domain": "Security",
+      "stem": "A phishing attempt is delivered by SMS text message. What is it called?",
+      "choices": {
+        "A": "Whaling",
+        "B": "Impersonation via tailgating",
+        "C": "Smishing",
+        "D": "Vishing"
+      }
+    },
+    {
+      "id": 65,
+      "domain": "Operating Systems",
+      "stem": "On macOS, which tool is used to repair, erase, and partition drives?",
+      "choices": {
+        "A": "Activity Monitor",
+        "B": "Disk Utility",
+        "C": "Boot Camp Assistant",
+        "D": "Finder"
+      }
+    },
+    {
+      "id": 66,
+      "domain": "Security",
+      "stem": "Which malware type spreads across networks by itself without needing a user to run a file?",
+      "choices": {
+        "A": "Trojan",
+        "B": "Worm",
+        "C": "Keylogger",
+        "D": "Adware"
+      }
+    },
+    {
+      "id": 67,
+      "domain": "Operating Systems",
+      "stem": "Which file extension is used for a Windows batch file run by cmd.exe?",
+      "choices": {
+        "A": ".sh",
+        "B": ".app",
+        "C": ".bat",
+        "D": ".js"
+      }
+    },
+    {
+      "id": 68,
+      "domain": "Security",
+      "stem": "Malware is confirmed on a workstation. After quarantining the system, what should be done BEFORE remediating in Windows?",
+      "choices": {
+        "A": "Disable System Restore",
+        "B": "Re-enable System Restore and create a restore point",
+        "C": "Educate the end user",
+        "D": "Reconnect the system to the network"
+      }
+    },
+    {
+      "id": 69,
+      "domain": "Software Troubleshooting",
+      "stem": "A Windows PC has become very slow. Task Manager shows one process using 100% CPU. What should the technician do first?",
+      "choices": {
+        "A": "Reinstall all applications",
+        "B": "Add more RAM immediately",
+        "C": "Identify the process and end or troubleshoot it",
+        "D": "Replace the CPU"
+      }
+    },
+    {
+      "id": 70,
+      "domain": "Software Troubleshooting",
+      "stem": "An application freezes and shows Not Responding. What should a user try first?",
+      "choices": {
+        "A": "End the task in Task Manager and reopen the app",
+        "B": "Format the drive",
+        "C": "Delete the application's folder manually",
+        "D": "Unplug the PC from the wall"
+      }
+    },
+    {
+      "id": 71,
+      "domain": "Security",
+      "stem": "A dialog dims the screen and asks for approval before an installer makes system-level changes in Windows. What feature is this?",
+      "choices": {
+        "A": "Windows Defender Firewall",
+        "B": "BitLocker",
+        "C": "User Account Control (UAC)",
+        "D": "Credential Manager"
+      }
+    },
+    {
+      "id": 72,
+      "domain": "Operational Procedures",
+      "stem": "Which step comes immediately after the theory is confirmed in the CompTIA troubleshooting process?",
+      "choices": {
+        "A": "Question the user about recent changes",
+        "B": "Document findings and close the ticket",
+        "C": "Identify the problem",
+        "D": "Establish a plan of action to resolve the problem and implement the solution"
+      }
+    },
+    {
+      "id": 73,
+      "domain": "Software Troubleshooting",
+      "stem": "A Windows Update fails repeatedly with the same error. What should the technician check first?",
+      "choices": {
+        "A": "Reformat the drive",
+        "B": "Replace the RAM",
+        "C": "Install a second antivirus program",
+        "D": "Run the Windows Update troubleshooter and check free disk space"
+      }
+    },
+    {
+      "id": 74,
+      "domain": "Operating Systems",
+      "stem": "Which Windows command checks a volume for file system errors and bad sectors?",
+      "choices": {
+        "A": "format",
+        "B": "diskpart list disk",
+        "C": "chkdsk",
+        "D": "tasklist"
+      }
+    },
+    {
+      "id": 75,
+      "domain": "Operational Procedures",
+      "stem": "Where should a technician look for handling, storage, and disposal information for a toner or cleaning chemical?",
+      "choices": {
+        "A": "Service-level agreement (SLA)",
+        "B": "Acceptable use policy (AUP)",
+        "C": "Safety data sheet (SDS)",
+        "D": "End-user license agreement (EULA)"
+      }
+    },
+    {
+      "id": 76,
+      "domain": "Software Troubleshooting",
+      "stem": "A desktop app is slow and the drive light stays on constantly. Task Manager shows disk usage at 100%. What is a good first step?",
+      "choices": {
+        "A": "Buy a new monitor",
+        "B": "Disable User Account Control",
+        "C": "Change the keyboard language",
+        "D": "Identify which process is causing the disk activity in Task Manager or Resource Monitor"
+      }
+    },
+    {
+      "id": 77,
+      "domain": "Software Troubleshooting",
+      "stem": "Several users report the same internal web app error since this morning, but other sites work. What is the best next step?",
+      "choices": {
+        "A": "Tell users to stop using the app forever",
+        "B": "Reimage every user PC",
+        "C": "Replace all network switches",
+        "D": "Check whether a recent change was made to the web app or its server"
+      }
+    },
+    {
+      "id": 78,
+      "domain": "Security",
+      "stem": "Someone stands behind an employee in a coffee shop to watch them type a password. Which attack is this?",
+      "choices": {
+        "A": "Ransomware",
+        "B": "Shoulder surfing",
+        "C": "Evil twin",
+        "D": "Vishing"
+      }
+    },
+    {
+      "id": 79,
+      "domain": "Software Troubleshooting",
+      "stem": "A browser loads pages slowly and shows outdated content on one site. What is a quick fix to try?",
+      "choices": {
+        "A": "Replace the network card",
+        "B": "Reset the BIOS to defaults",
+        "C": "Reinstall the operating system",
+        "D": "Clear the browser cache and cookies"
+      }
+    },
+    {
+      "id": 80,
+      "domain": "Operating Systems",
+      "stem": "Which Windows tool provides real-time and logged graphs of performance counters for long-term analysis?",
+      "choices": {
+        "A": "msinfo32",
+        "B": "Performance Monitor (perfmon)",
+        "C": "Disk Cleanup",
+        "D": "Character Map"
+      }
+    },
+    {
+      "id": 81,
+      "domain": "Operational Procedures",
+      "stem": "How should old lithium-ion laptop batteries be disposed of?",
+      "choices": {
+        "A": "In the regular office trash",
+        "B": "Through a recycling program or facility that follows local regulations",
+        "C": "By burning them in a safe outdoor area",
+        "D": "By puncturing them to drain the charge first"
+      }
+    },
+    {
+      "id": 82,
+      "domain": "Security",
+      "stem": "A technician finds a spreadsheet of customer Social Security numbers saved on a shared desktop. What type of data is this?",
+      "choices": {
+        "A": "Personally identifiable information (PII)",
+        "B": "Public marketing data",
+        "C": "System log data",
+        "D": "Open-source license data"
+      }
+    },
+    {
+      "id": 83,
+      "domain": "Security",
+      "stem": "An attacker follows an employee through a badge-secured door without scanning a badge. What is this called?",
+      "choices": {
+        "A": "Phishing",
+        "B": "Tailgating",
+        "C": "Whaling",
+        "D": "Shoulder surfing"
+      }
+    },
+    {
+      "id": 84,
+      "domain": "Security",
+      "stem": "A user downloads a free game that also secretly installs a backdoor. What type of malware best describes this?",
+      "choices": {
+        "A": "Ransomware",
+        "B": "Trojan",
+        "C": "Boot sector virus only",
+        "D": "Worm"
+      }
+    },
+    {
+      "id": 85,
+      "domain": "Software Troubleshooting",
+      "stem": "A user's Windows profile fails to load and they get a temporary profile at sign-in. What is a likely cause?",
+      "choices": {
+        "A": "A loose monitor cable",
+        "B": "An empty toner cartridge",
+        "C": "A corrupted user profile",
+        "D": "A bad Ethernet cable"
+      }
+    },
+    {
+      "id": 86,
+      "domain": "Security",
+      "stem": "Which login method is an example of multifactor authentication?",
+      "choices": {
+        "A": "A username and a password",
+        "B": "A password plus a one-time code from an authenticator app",
+        "C": "A password and a security question",
+        "D": "Two different passwords"
+      }
+    },
+    {
+      "id": 87,
+      "domain": "Security",
+      "stem": "Files on a workstation are suddenly encrypted and a message demands payment in cryptocurrency. What type of malware is this?",
+      "choices": {
+        "A": "Adware",
+        "B": "Ransomware",
+        "C": "Keylogger",
+        "D": "Rootkit"
+      }
+    },
+    {
+      "id": 88,
+      "domain": "Software Troubleshooting",
+      "stem": "A Windows PC shows a Blue Screen of Death after a new RAM module was installed. What should be checked first?",
+      "choices": {
+        "A": "Clear the print queue",
+        "B": "Change the desktop wallpaper",
+        "C": "Reseat or test the new RAM module",
+        "D": "Reinstall the web browser"
+      }
+    },
+    {
+      "id": 89,
+      "domain": "Software Troubleshooting",
+      "stem": "A Windows PC randomly reboots. Event Viewer shows a Kernel-Power critical error. What is a reasonable area to investigate?",
+      "choices": {
+        "A": "The printer queue",
+        "B": "Power supply, overheating, or unexpected power loss",
+        "C": "The desktop wallpaper",
+        "D": "The browser home page"
+      }
+    },
+    {
+      "id": 90,
+      "domain": "Operational Procedures",
+      "stem": "A customer is upset and talking over the technician. What should the technician do first?",
+      "choices": {
+        "A": "Listen actively without interrupting, then restate the problem to confirm understanding",
+        "B": "Argue the point until the customer agrees",
+        "C": "End the call immediately",
+        "D": "Use technical jargon to show expertise"
+      }
+    }
+  ]
+}
